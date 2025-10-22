@@ -10,6 +10,6 @@ Routines for checking the short lived climate forcings inputs specified in CAM's
 * ```./check_slcf_inputs.ipynb``` is the script for obtaining the emissions from a CAM namelist file and comparing them to input4MIPS.  Users should input the following:
 
 	* In the second cell, provide a path to the CESM case directory and a short name to describe the simulation along with a project key.
-	* Provide the list of species and sectors to be compared to the CMIP7 emissions in emissions_master_list.yaml.  The current list reflects what is being used in simulation 214.
+	* Provide the list of species and sectors to be compared to the CMIP7 emissions in ```emissions_master_list.yaml```.  The current list reflects what is being used in simulation 214.
 
 * This script will read in all aerosol and aerosol precursor emissions files in the namelist (except volcanos).  It will then loop through the descriptors in the yaml file, compare with the appropriate nemissions file from the CAM namelist if present, if not present, the input4MIPs emissions will be plotted along with a red "MISSING".  If there are any extra species or sectors that are not present in the yaml file, they will be plotted separately.  
