@@ -1,0 +1,130 @@
+species:
+  SO2:
+    sectors:
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/SO2_em_anthro/gn/v20250421/
+      varname: SO2_em_anthro
+      sectoritems: all
+      scalefac_mass: 0.975
+    - name: SO2_em_AIR_anthro
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/SO2_em_AIR_anthro/gn/v20250421/
+      varname: SO2_em_AIR_anthro
+    - name: SO2smoothed
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/SO2smoothed/gn/v20250403/
+      varname: SO2smoothed
+  bc_a4:
+    sectors:
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/BC_em_anthro/gn/v20250421/
+      varname: BC_em_anthro
+      sectoritems: all
+    - name: BC_em_AIR_anthro
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/BC_em_AIR_anthro/gn/v20250421/
+      varname: BC_em_AIR_anthro
+    - name: BCsmoothed
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/BCsmoothed/gn/v20250403/
+      varname: BCsmoothed
+  pom_a4:
+    sectors:
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/OC_em_anthro
+      varname: OC_em_anthro
+      scalefac_mass: 1.4
+      sectoritems: all
+    - name: OCsmoothed
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/OCsmoothed/gn/v20250403/
+      varname: OCsmoothed
+      scalefac_mass: 1.4
+  so4_a1:
+    sectors:
+    - name: Energy + Industrial
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/SO2_em_anthro/gn/v20250421/
+      varname: SO2_em_anthro
+      sectoritems: [1,2]
+      scalefac_mole: 0.025
+      mw: 115
+      mwsource: 64
+    - name: Agriculture + Solventsproductionandapplication + Waste + InternationalShipping
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/SO2_em_anthro/gn/v20250421
+      varname: SO2_em_anthro
+      sectoritems: [0,5,6,7]
+      scalefac_mole: 0.025
+      mw: 115
+      mwsource: 64
+    - name: SO2smoothed
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/SO2smoothed/gn/v20250403/
+      varbane: SO2smoothed
+      scalefac_mole: 0.025
+      mw: 115
+      mwsource: 64
+  so4_a2:
+    sectors:
+    - name: Transportation + Residential_Commercial_Other
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/SO2_em_anthro/gn/v20250421/
+      varname: SO2_em_anthro
+      sectoritems: [3,4]
+      scalefac_mole: 0.025
+      mw: 115
+      mwsource: 64
+  SOAE:
+    sectors:
+    - name: C5H8smoothed
+      sub_species: ISOP
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/C5H8smoothed/gn/v20250403
+      varname: C5H8smoothed 
+    - name: C6H6smoothed
+      sub_species: BENZENE
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/C6H6smoothed/gn/v20250403
+      varname: C6H6smoothed
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      sub_species: BENZENE
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18-supplemental/atmos/mon/VOC13_benzene_em_speciated_VOC_anthro/gn/v20250421/
+      varname: VOC13_benzene_em_speciated_VOC_anthro
+      sectoritems: 'all'
+    - name: bb
+      sub_species: IVOC
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/NMVOCbulksmoothed/gn/v20250403/
+      varname: NMVOCbulksmoothed
+      scalefac_mass: 0.2
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      sub_species: IVOC
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/NMVOC_em_anthro/gn/v20250421/
+      varname: NMVOC_em_anthro
+      scalefac_mass: 0.2
+      sectoritems: 'all'
+    - name: OCsmoothed
+      sub_species: SVOC
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/OCsmoothed/gn/v20250403
+      varname: OCsmoothed 
+      scalefac_mass: 0.84
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      sub_species: SVOC
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18/atmos/mon/OC_em_anthro
+      varname: OC_em_anthro
+      scalefac_mass: 0.84
+      sectoritems: 'all'
+    - name: C7H8smoothed
+      sub_species: TOLUENE
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/C7H8smoothed/gn/v20250403
+      varname: C7H8smoothed 
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      sub_species: TOLUENE
+      source: PNNL-JGCRI/CEDS-CMIP-2025-04-18-supplemental/atmos/mon/VOC14_toluene_em_speciated_VOC_anthro/gn/v20250421
+      varname: VOC14_toluene_em_speciated_VOC_anthro
+      sectoritems: 'all'
+    - name: C8H10smoothed
+      sub_species: XYLENES
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/C8H10smoothed/gn/v20250403
+      varname: C8H10smoothed 
+    - name: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      sub_species: XYLENES
+      source: [PNNL-JGCRI/CEDS-CMIP-2025-04-18-supplemental/atmos/mon/VOC15_xylene_em_speciated_VOC_anthro/gn/v20250421,PNNL-JGCRI/CEDS-CMIP-2025-04-18-supplemental/atmos/mon/VOC16_trimethylb_em_speciated_VOC_anthro/gn/v20250421,PNNL-JGCRI/CEDS-CMIP-2025-04-18-supplemental/atmos/mon/VOC17_other_arom_em_speciated_VOC_anthro/gn/v20250421]
+      varname: [VOC15_xylene_em_speciated_VOC_anthro,VOC16_trimethylb_em_speciated_VOC_anthro,VOC17_other_arom_em_speciated_VOC_anthro]
+      sectoritems: 'all'
+      mwsource: [106,120,126.8]
+      mw: 106
+      scalefac_mole: 1
+    - name: C10H16smoothed
+      sub_species: MTERP
+      source: DRES/DRES-CMIP-BB4CMIP7-2-0/atmos/mon/C10H16smoothed/gn/v20250403
+      varname: C10H16smoothed 
