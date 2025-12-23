@@ -201,10 +201,10 @@ def setup_plot_locs():
     return x1, x2, y1, y2
 
 
-def plot_the_plot(fig, dat, species, sector, x1, x2, y1, y2, input4mips = None, mylabel = None, subspecies=None):
+def plot_the_plot(fig, dat, species, emissions_source, sector, x1, x2, y1, y2, input4mips = None, mylabel = None, subspecies=None):
     ax = fig.add_axes([x1, y1, (x2-x1), (y2-y1)])
     ax.plot(dat.year, dat, label=mylabel, color='red', linewidth=2, zorder=1, linestyle='dotted')
-    fig.text(x1+0.005,y2-0.02,species, fontsize=8, va='top')
+    fig.text(x1+0.005,y2-0.02,species+' ('+emissions_source+')', fontsize=8, va='top')
     if subspecies is not None:
         fig.text(x1+0.005,y2-0.025,subspecies, fontsize=8, va='top')
     sectortext = "\n".join(textwrap.wrap(sector, width=20))
