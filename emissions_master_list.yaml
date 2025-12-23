@@ -1,0 +1,76 @@
+species:
+  SO2:
+    sectors:
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro
+    - sector: SO2_em_AIR_anthro
+      emissions_source: aircraft
+    - sector: SO2smoothed
+      emissions_source: biomass_burning
+  bc_a4:
+    sectors:
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro
+    - sector: BC_em_AIR_anthro
+      emissions_source: aircraft
+    - sector: BCsmoothed
+      emissions_source: biomass_burning
+  pom_a4:
+    sectors:
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro
+    - sector: OCsmoothed
+      emissions_source: biomass_burning
+  so4_a1:
+    sectors:
+    - sector: Energy + Industrial
+      emissions_source: anthro
+    - sector: Agriculture + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro
+    - sector: SO2smoothed
+      emissions_source: biomass_burning
+  so4_a2:
+    sectors:
+    - sector: Transportation + Residential_Commercial_Other
+      emissions_source: anthro
+  SOAE:
+    sectors:
+    - sector: C5H8smoothed
+      emissions_source: biomass_burning
+      sub_species: ISOP
+    - sector: C6H6smoothed
+      emissions_source: biomass_burning
+      sub_species: BENZENE
+    - sector: C6H6smoothed
+      emissions_source: biomass_burning
+      sub_species: BENZENE
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro 
+      sub_species: BENZENE
+    - sector: NMVOCbulksmoothed
+      emissions_source: biomass_burning
+      sub_species: IVOC
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro
+      sub_species: IVOC
+    - sector: OCsmoothed
+      emissions_source: biomass_burning
+      sub_species: SVOC
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro 
+      sub_species: SVOC
+    - sector: C7H8smoothed
+      emissions_source: biomass_burning
+      sub_species: TOLUENE
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro
+      sub_species: TOLUENE
+    - sector: C8H10smoothed
+      emissions_source: biomass_burning
+      sub_species: XYLENES
+    - sector: Agriculture + Energy + Industrial + Transportation + Residential_Commercial_Other + Solventsproductionandapplication + Waste + InternationalShipping
+      emissions_source: anthro
+      sub_species: XYLENES
+    - sector: C10H16smoothed
+      emissions_source: biomass_burning
+      sub_species: MTERP
